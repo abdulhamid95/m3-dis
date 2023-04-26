@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.css" integrity="sha512-q+XPbSNsKnbJJPUrvDz/IZD6a3TfRgPPJvS3l3KCA58ePOA5+aQJ9nbn5zN2k3ns0B27E7OruPsW+4I7djLSBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Dentist Landing Page</title>
+
+</head>
+<body>
+    <header id="header">
+        <div class="overlay">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg container- ps-5 pe-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/icons/logo-final.png" class="brand-logo" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto ps-0">
+                        <li class="nav-item active me-5">
+                            <a class="nav-link" href="#">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#about-us">Hakımızda <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#gallery">Veneer</a>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Bize Ulaşın</a>
+
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="btn call-button" href="https://api.whatsapp.com/send?phone=905056255039" target="_blank">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +90 (505) 625 50 39
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown ml-5">
+                            <a href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i>
+                                <div class="dropdown-menu" aria-bs-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Turkish</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="./en.html">English</a>
+                                </div>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-layout">
+                <div class="container">
+                    <div class="row">
+                        <div class="text-center">
+                            <div class="header-text animate slideInLeft">
+                                <div class="primary-color">                         
+                                    M3 diş laboratuvarı
+                                </div>
+                                <h1 class="header-heading animate fadeInDown">
+                                    Teknisyenlerimiz Diş Dünyasında En Uygun    <span
+                                    class="txt-rotate"
+                                    data-period="2000"
+                                    data-rotate='[ "Olanıdır.", "Olanıdır.", "Olanıdır." ]'></span>
+                                    
+                                </h1>
+                                <p>
+                                    Uzman ve öncü bir çalışma ekibimiz her zaman en iyi sonuçları elde etmek için çalışıyor.
+                                </p>
+                                <a href="#gallery" class="btn appointment-button">Daha fazla izle</a>
+
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <img src="./images/Untitled-4.png" alt="doctor" class="w-100 banner-img animate slideInRight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <main>
+        <section class="about-us">
+            <div class="container">
+                <div class="warning-color">
+                    Uzman ve öncü bir çalışma ekibimiz her zaman en iyi sonuçları elde etmek için çalışıyor
+                </div>
+                <h2 class="about-heading animate fadeInDown">
+                    En iyi ürünlerimizi ve hizmetlerimizi sunmaktan mutluluk duyuyoruz
+                </h2>
+                <div class="about-wraper">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="experience-years animate fadeInLeft">
+                                <span class="count year-count" id="year-count"></span>
+                                <span>+</span>
+                                <h3>Yıllık Deneyim</h3>
+                                <p>Yerel ve uluslararası deneyime ve sertifikalara sahip en iyi 60 profesyonel diş teknisyenine sahibiz</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="video-img animate bounceIn">
+                                <div class="video-overlay">
+                                    <div class="video-watch">
+                                        <a data-fancybox href="#myVideo">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                        Videoyumuz İzle
+                                        <video src="./videos/video.mp4" id="myVideo" style="display:none;" controls></video>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="contact-us-card animate fadeInRight">
+                                <img src="./images/icons/home-section2-p4.png" width="90px" alt="">
+                                <h4>İmplant üzerine sabitlenen zirkonyum konusunda uzman teknisyen, hayalinizdeki dişleri yapmak için çaba gösterecektir.</h4>
+                                <p>İmplant üzerine sabitlenen zirkonyum konusunda uzman teknisyen, diş hekimle iş birliği yaparak, diş implantlarınızın üzerine yerleştirilecek olan zirkonyum diş protezlerini tasarlayıp üretecektir.</p>
+                                <p>Zirkonyum diş protezleri, doğal dişlere oldukça benzer bir görünüm ve estetik sağlar.</p>
+                                <a href="#footer" class="btn contact-button">Bize Ulaşın</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-lg-2">
+                        <div class="warning-color animate fadeInRight">
+                            Veneer
+                        </div>
+                        <h2 class="heading animate fadeInLeft">Dişlerinize çekici bir görünüm verir</h2>
+                        <p>Zarar görmüş veya şekli bozulmuş dişlerin görünümünü iyileştirmek için kullanılan bir teknolojidir.</p>
+                        <div class="row">
+                            <div class="col-6 animate jackInTheBox">
+                                <ul>
+                                    <li>Görünümünü iyileştirir</li>
+                                    <li>Uzun ömürlü ve dayanıklıdır</li>
+                                    <li>Renk değiştirmez</li>
+                                </ul>
+                            </div>
+                            <div class="col-6 animate jackInTheBox">
+                                <ul>
+                                    <li>Çabuk uygulanır</li>
+                                    <li>Doğal görünümlüdür</li>
+                                    <li>Kolay temizlenir</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#footer" class="btn get-touch-button">Bilgilerimiz</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <img class="animate fadeInLeft w-100" src="./images/43r.png" alt="...">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="our-work">
+            <div class="container">
+                <div class="overlay animate zoomInUp">
+                    <div class="row">
+                        <div class="col-md-3 col-6 d-flex justify-content-center">
+                            <div class="icon-wraper">
+                                <img src="./images/icons/iconee-3.png" alt="">
+                            </div>
+                            <div class="text-left">
+                                <div class="d-block">
+                                    <span class="count primary-care" id="year-experince"></span>
+                                    <span>+</span>
+                                </div>
+                                <span class="icon-wraper-text">Yıllık Tecrübe</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6 d-flex justify-content-center">
+                            <div class="icon-wraper">
+                                <img src="./images/icons/iconee-4.png" alt="">
+                            </div>
+                            <div class="text-left">
+                                <div class="d-block">
+                                    <span class="count donate" id="donate"></span>
+                                    <span>+</span>
+                                </div>
+                                <span class="icon-wraper-text">Deneyimli Personel</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-6 d-flex justify-content-center">
+                            <div class="icon-wraper">
+                                <img src="./images/icons/home-section5-p4.png" alt="">
+                            </div>
+                            <div class="text-left">
+                                <div class="d-block">
+                                    <span class="count pay-bill" id="pay-bill"></span><span>B</span>
+                                    <span>+</span>
+                                </div>
+                                <span class="icon-wraper-text">İş Sayısı</span>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-3 col-6 d-flex justify-content-center">
+                            <div class="icon-wraper">
+                                <img src="./images/icons/icone-4-2.png" alt="">
+                            </div>
+                            <div class="text-left">
+                                <div class="d-block">
+                                    <span class="count emergency" id="emergency"></span>
+                                    <span>+</span>
+                                </div>
+                                <span class="icon-wraper-text">Diş Klinik</span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="overlay animate zoomInDown">
+                <div class="container">
+                    <span class="warning-color">Dental tasarım ve üretim</span>
+                    <h2 class="heading animate zoomInUp">Sağladığımız hizmetler yüksek kaliteli diş seramiği sağlıyoruz.</h2>
+                    <div class="gallery-wraper">
+                        <div class="radio-buttons">
+                            <input type="radio" name="gallery-type" id="our-results" checked>
+                            <label for="our-results" class="label-type-1">
+                                İşimizin 
+                            </label>
+                            
+                            <input type="radio" name="gallery-type" id="our-lab">
+                            <label for="our-lab" class="label-type-2">
+                                Laboratuvarımız
+                            </label>
+                        </div>
+                        <div class="sliders">
+                            <div class="swiper gallery-swiper" id="swiper-results">
+                                <div class="swiper-wrapper swiper-results">
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-1.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-2.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-3.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-4.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-5.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-6.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/results-7.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="swiper gallery-swiper d-none" id="swiper-lab">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-1.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-2.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-3.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-4.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-5.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-6.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-7.png" alt=""></div>
+                                    <div class="swiper-slide"><img class="w-100" src="./images/lab-8.png" alt=""></div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="bartners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="swiper brands">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./images/icons/brand-3.svg" class="w-75 mx-auto" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/icons/brand-4.png" class="w-75 mx-auto" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/icons/brand-5.png" class="w-75 mx-auto" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/icons/brand-6.png" class="w-75 mx-auto" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/icons/brand-10.png" class="w-75 mx-auto" alt=""></div>
+                                <div class="swiper-slide"><img src="./images/icons/brand-8.png" class="w-75 mx-auto" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <section class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d376.0120792578022!2d28.8330502!3d41.0668803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa53e3493c70d%3A0x9543412838830325!2sBurak%20Plaza!5e0!3m2!1sen!2str!4v1681767795909!5m2!1sen!2str" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </section>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="text-center">
+                                <a href="#" class="brand">
+                                    <img class="mt-5" width="150" src="./images/icons/logo-final.png" alt="logo">
+                                </a>
+                                <div class="social-media d-block">
+                                    <a href="https://www.facebook.com/m3laboratory" target="_blank">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/m3laboratory/" target="_blank">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="f-form">
+                            <h3>Bizimle iletişime geç</h3>
+                            <p>Mesaj Gönder</p>
+                            <form action="https://formsubmit.co/abdulhamidhamsho1@gmail.com" method="post">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                                <input type="hidden" name="_subject" value="New submission!">
+                                <div class="input name">
+                                    <input class="form-control" autocomplete="off" name="name" placeholder="Full Name" required="" type="text">
+                                </div>
+                                <div class="input phone" class="w-100">
+                                    <input class="form-control" type="tel" class="w-100" name="phone" id="phone" placeholder="0505 625 50 39" required="">
+                                </div>
+                                <div class="input message">
+                                    <textarea class="form-control" name="message" placeholder="Message" maxlength="3200" rows="1" autocomplete="off" required=""></textarea>
+                                </div>
+                                <div class="button submit">
+                                    <button type="submit" class="btn submit-button">Gönder</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="copyright-powerd">
+                        <p>M3 Lab <i class="fa-regular fa-copyright me-2"></i><span id="year"></span> All Rights Reserved</p>
+                        <p class="text-center" style="font-size: 14px;"><a href="https://api.whatsapp.com/send?phone=905348745422" target="_blank">Abdulhamid Hamsho</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js" integrity="sha512-15ILfD6pRgsfXlX5s0a7JKEbcJVYz0G3ut12UiysVmvA7goi351a5ownrpxYzuVZh5GtXvMzFeyy/8/jZaWjWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/countUp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
